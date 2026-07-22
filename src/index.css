@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background-color: #020617;
+  font-family: Arial, sans-serif;
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  nav div {
+    display: block !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+}
+
+* {
+  transition: all 0.25s ease;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+/* DARK MODE */
+body.dark {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+}
+
+/* LIGHT MODE */
+body.light {
+  background: #f1f5f9;
+  color: #0f172a;
+}body.light .card,
+body.light .form-card,
+body.light .list .item,
+body.light .category-item {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.light input,
+body.light select {
+  background: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+body.light .btn {
+  color: #0f172a !important;
+}

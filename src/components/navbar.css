@@ -1,0 +1,39 @@
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;              /* ADDED */
+  align-items: center;        /* ADDED */
+  gap: 8px;                   /* ADDED */
+}
+
+.logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transform: scale(1.5);   /* 🔥 makes it look bigger */
+  transform-origin: center;
+}
+
+.fin {
+  color: #e2e8f0;
+}
+
+.savvy {
+  background: linear-gradient(135deg, #6366f1, #22c55e);
+
+  /* Standard */
+  background-clip: text;
+
+  /* Webkit (Chrome, Safari) */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Fallback */
+  color: transparent;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
